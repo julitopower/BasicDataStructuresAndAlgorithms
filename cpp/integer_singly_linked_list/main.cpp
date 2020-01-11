@@ -10,7 +10,7 @@ int main(int, char**) {
     list.push(i);
   }
   
-  for (auto it = list.iter(); it.has_value(); it.next()) {
+  for (auto it = list.citer(); it.has_value(); it.next()) {
     std::cout << it.get() << ", ";
   }
   std::cout << std::endl;

@@ -31,14 +31,14 @@ struct IntNode {
  *
  * Does not allow modifying the list
  */
-class IntIterator {
+class ConstIntIterator {
  public:
   /*!
    * \brief Create Iterator that points to root IntNode
    *
    * This is a const interator
    */
-  IntIterator(IntNode* root);
+  ConstIntIterator(IntNode* root);
   /*!
    * \brief Advance the iterator one position
    *
@@ -50,7 +50,7 @@ class IntIterator {
    *
    * If the iterator does not point to a valid IntNode it throws
    */
-  std::int64_t get() const;
+  const std::int64_t& get() const;
   /*!
    * \brief Does the iterator point to a valid IntNode?
    */
@@ -64,7 +64,7 @@ class IntSList {
   using value_type = std::int64_t;
 
   ~IntSList();
-  IntIterator iter() const;
+  ConstIntIterator citer() const;
   IntNode* root() const;
   IntNode* last() const;
   void push(std::int64_t val);
