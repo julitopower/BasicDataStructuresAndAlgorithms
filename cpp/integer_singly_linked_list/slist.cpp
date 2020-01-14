@@ -8,7 +8,14 @@ IntNode::~IntNode() {
     delete next;
   }
 }
+
 void ConstIntIterator::next() {
+  if (curr_ != nullptr) {
+    curr_ = curr_->next;
+  }
+}
+
+void IntIterator::next() {
   if (curr_ != nullptr) {
     curr_ = curr_->next;
   }
@@ -21,14 +28,29 @@ const std::int64_t& ConstIntIterator::get() const {
   return curr_->val;
 }
 
+std::int64_t& IntIterator::get() {
+  if (curr_ == nullptr) {
+    throw std::logic_error{"Invalid iterator. You may be trying to get values past the last one."};
+  }
+  return curr_->val;
+}
+
 bool ConstIntIterator::has_value() const {
+  return curr_ != nullptr;
+}
+bool IntIterator::has_value() const {
   return curr_ != nullptr;
 }
 
 ConstIntIterator::ConstIntIterator(IntNode* root) : curr_{root} {}
+IntIterator::IntIterator(IntNode* root) : curr_{root} {}
 
 ConstIntIterator IntSList::citer() const {
   return ConstIntIterator(this->root());
+}
+
+IntIterator IntSList::iter() const {
+  return IntIterator(this->root());
 }
 
 IntNode* IntSList::root() const { return root_; }

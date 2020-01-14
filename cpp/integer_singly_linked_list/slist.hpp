@@ -59,12 +59,46 @@ class ConstIntIterator {
   IntNode* curr_ = nullptr;
 };
 
+/*!
+ * \brief Iterator to traverse a singly linked list
+ *
+ * Does not allow modifying the list
+ */
+class IntIterator {
+ public:
+  /*!
+   * \brief Create Iterator that points to root IntNode
+   *
+   * This is a const interator
+   */
+  IntIterator(IntNode* root);
+  /*!
+   * \brief Advance the iterator one position
+   *
+   * This method never throws.
+   */
+  void next();
+  /*!
+   * \brief Get the current value of the iterator
+   *
+   * If the iterator does not point to a valid IntNode it throws
+   */
+  std::int64_t& get();
+  /*!
+   * \brief Does the iterator point to a valid IntNode?
+   */
+  bool has_value() const;
+ private:
+  IntNode* curr_ = nullptr;
+};
+
 class IntSList {
  public:
   using value_type = std::int64_t;
 
   ~IntSList();
   ConstIntIterator citer() const;
+  IntIterator iter() const;  
   IntNode* root() const;
   IntNode* last() const;
   void push(std::int64_t val);
