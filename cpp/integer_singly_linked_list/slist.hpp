@@ -5,7 +5,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 //TODO: Mark noexcept functinos as such
 ////////////////////////////////////////////////////////////////////////////////
-namespace bda {
+namespace bda { // bda stands for Basic Data Structures
 /*!
  * \brief A node part of a singly linked list. Payload is int64_t
  */
@@ -107,4 +107,4 @@ class IntSList {
   IntNode* root_ = nullptr;
   IntNode* last_ = nullptr;  
 };
-}
+} // namespace bda

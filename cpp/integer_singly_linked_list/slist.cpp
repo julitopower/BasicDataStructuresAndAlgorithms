@@ -1,8 +1,9 @@
-#include "slist.hpp"
+q#include "slist.hpp"
 #include "exception"
 
 namespace bda {
 IntNode::IntNode(std::int64_t val) : val{val} {}
+
 IntNode::~IntNode() {
   if (next != nullptr) {
     delete next;
@@ -38,11 +39,13 @@ std::int64_t& IntIterator::get() {
 bool ConstIntIterator::has_value() const {
   return curr_ != nullptr;
 }
+
 bool IntIterator::has_value() const {
   return curr_ != nullptr;
 }
 
 ConstIntIterator::ConstIntIterator(IntNode* root) : curr_{root} {}
+
 IntIterator::IntIterator(IntNode* root) : curr_{root} {}
 
 ConstIntIterator IntSList::citer() const {
@@ -54,7 +57,9 @@ IntIterator IntSList::iter() const {
 }
 
 IntNode* IntSList::root() const { return root_; }
+
 IntNode* IntSList::last() const { return last_; }
+
 void IntSList::push(std::int64_t val) {
   IntNode* node = new IntNode(val);
   if (root_ == nullptr) {
@@ -65,10 +70,10 @@ void IntSList::push(std::int64_t val) {
   }
   last_ = node;
 }
+
 IntSList::~IntSList() {
   if (root_ != nullptr) {
     delete root_;
   }
 }
-
-}
+} // namespace bda
