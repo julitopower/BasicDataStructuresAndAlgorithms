@@ -3,7 +3,7 @@
 #include <tuple>
 
 ////////////////////////////////////////////////////////////////////////////////
-//TODO: Mark noexcept functinos as such
+//TODO: Mark noexcept functions as such
 ////////////////////////////////////////////////////////////////////////////////
 namespace bda { // bda stands for Basic Data Structures
 /*!
@@ -15,14 +15,16 @@ struct IntNode {
   using value_type = std::int64_t;
   /*!
    * \brief Create a  node with the given value
+   *
+   * \param val The payload of this node
    */
   IntNode(std::int64_t val);
   ~IntNode();
 
  public:
-  /*! The actual payload */
+  /*! \brief The actual payload */
   std::int64_t val;
-  /*! Pointer to the next node in the list */
+  /*! \brief Pointer to the next node in the list */
   IntNode* next = nullptr;
 };
 
@@ -98,13 +100,13 @@ class IntSList {
 
   ~IntSList();
   ConstIntIterator citer() const;
-  IntIterator iter() const;  
+  IntIterator iter() const;
   IntNode* root() const;
   IntNode* last() const;
   void push(std::int64_t val);
  private:
   std::size_t size_ = 0;
   IntNode* root_ = nullptr;
-  IntNode* last_ = nullptr;  
+  IntNode* last_ = nullptr;
 };
 } // namespace bda
