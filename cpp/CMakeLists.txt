@@ -6,6 +6,4 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 enable_testing()
 add_subdirectory(integer_singly_linked_list)
-
-
-
+add_subdirectory(generic_singly_linked_list)

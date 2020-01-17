@@ -1,4 +1,4 @@
-q#include "slist.hpp"
+#include "slist.hpp"
 #include "exception"
 
 namespace bda {
