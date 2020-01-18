@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['root_5f',['root_',['../classbda_1_1_int_s_list.html#a60d69690207a018945563db6c6dc4b6f',1,'bda::IntSList']]]
+  ['last_5f',['last_',['../classbda_1_1_list.html#ab42e76ac37568620ceb4e81ee0bed658',1,'bda::List::last_()'],['../classbda_1_1_int_s_list.html#af29b4f586e988e4f76242bea64672907',1,'bda::IntSList::last_()']]]
 ];

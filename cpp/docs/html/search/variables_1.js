@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['features',['features',['../feature__tests_8c.html#a1582568e32f689337602a16bf8a5bff0',1,'features():&#160;feature_tests.c'],['../feature__tests_8cxx.html#a1582568e32f689337602a16bf8a5bff0',1,'features():&#160;feature_tests.cxx']]]
+  ['b',['b',['../structanonymous__namespace_02main_8cpp_03_1_1_my_type.html#aca1267184030135bea6ac25e804091e5',1,'anonymous_namespace{main.cpp}::MyType']]]
 ];
