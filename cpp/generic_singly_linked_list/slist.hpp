@@ -39,6 +39,7 @@ struct Node {
  *
  * Does not allow modifying the list
  */
+//TODO: We only need one iterator and a bit of SFINAE magic
 template<typename T>
 class ConstIterator {
  public:
