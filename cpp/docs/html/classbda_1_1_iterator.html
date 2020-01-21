@@ -78,8 +78,6 @@ $(function() {
 Collaboration diagram for bda::Iterator&lt; T &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbda_1_1_iterator__coll__graph.png" border="0" usemap="#bda_1_1_iterator_3_01_t_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="bda_1_1_iterator_3_01_t_01_4_coll__map" id="bda_1_1_iterator_3_01_t_01_4_coll__map">
-</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -110,7 +108,7 @@ class bda::Iterator&lt; T &gt;</h3>
 <p><a class="el" href="classbda_1_1_iterator.html" title="Iterator to traverse a singly linked list. ">Iterator</a> to traverse a singly linked list. </p>
 <p>Does not allow modifying the list </p>
 
-<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00091">91</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00097">97</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad28d4e5fa9a4e13545b830199bc0eb69"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad28d4e5fa9a4e13545b830199bc0eb69">&#9670;&nbsp;</a></span>Iterator()</h2>
@@ -141,8 +139,8 @@ template&lt;typename T &gt; </div>
 <p>Create <a class="el" href="classbda_1_1_iterator.html" title="Iterator to traverse a singly linked list. ">Iterator</a> that points to root <a class="el" href="structbda_1_1_int_node.html" title="A node part of a singly linked list. Payload is int64_t. ">IntNode</a>. </p>
 <p>This is a const interator </p>
 
-<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00099">99</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;: <a class="code" href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">curr_</a>{root} {}</div><div class="ttc" id="classbda_1_1_iterator_html_a3d5ef2aeb6acce82c1742374f895ff3a"><div class="ttname"><a href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">bda::Iterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdoc">non-owning pointer to current Node </div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00130">slist.hpp:130</a></div></div>
+<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00105">105</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;: <a class="code" href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">curr_</a>{root} {}</div><div class="ttc" id="classbda_1_1_iterator_html_a3d5ef2aeb6acce82c1742374f895ff3a"><div class="ttname"><a href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">bda::Iterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdoc">non-owning pointer to current Node </div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00136">slist.hpp:136</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -175,8 +173,8 @@ template&lt;typename T &gt; </div>
 <p>Get the current value of the iterator. </p>
 <p>If the iterator does not point to a valid <a class="el" href="structbda_1_1_int_node.html" title="A node part of a singly linked list. Payload is int64_t. ">IntNode</a> it throws </p>
 
-<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00116">116</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;           {</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">curr_</a> == <span class="keyword">nullptr</span>) {</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="keywordflow">throw</span> std::logic_error{<span class="stringliteral">&quot;Invalid iterator. You may be trying to get values past the last one.&quot;</span>};</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">curr_</a>-&gt;val;    </div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  }</div><div class="ttc" id="classbda_1_1_iterator_html_a3d5ef2aeb6acce82c1742374f895ff3a"><div class="ttname"><a href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">bda::Iterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdoc">non-owning pointer to current Node </div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00130">slist.hpp:130</a></div></div>
+<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00122">122</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;           {</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">curr_</a> == <span class="keyword">nullptr</span>) {</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      <span class="keywordflow">throw</span> std::logic_error{<span class="stringliteral">&quot;Invalid iterator. You may be trying to get values past the last one.&quot;</span>};</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">curr_</a>-&gt;val;    </div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  }</div><div class="ttc" id="classbda_1_1_iterator_html_a3d5ef2aeb6acce82c1742374f895ff3a"><div class="ttname"><a href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">bda::Iterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdoc">non-owning pointer to current Node </div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00136">slist.hpp:136</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -207,8 +205,8 @@ template&lt;typename T &gt; </div>
 
 <p>Does the iterator point to a valid <a class="el" href="structbda_1_1_int_node.html" title="A node part of a singly linked list. Payload is int64_t. ">IntNode</a>? </p>
 
-<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00125">125</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                         {</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">curr_</a> != <span class="keyword">nullptr</span>;    </div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  }</div><div class="ttc" id="classbda_1_1_iterator_html_a3d5ef2aeb6acce82c1742374f895ff3a"><div class="ttname"><a href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">bda::Iterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdoc">non-owning pointer to current Node </div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00130">slist.hpp:130</a></div></div>
+<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00131">131</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                         {</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">curr_</a> != <span class="keyword">nullptr</span>;    </div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  }</div><div class="ttc" id="classbda_1_1_iterator_html_a3d5ef2aeb6acce82c1742374f895ff3a"><div class="ttname"><a href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">bda::Iterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdoc">non-owning pointer to current Node </div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00136">slist.hpp:136</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -240,8 +238,8 @@ template&lt;typename T &gt; </div>
 <p>Advance the iterator one position. </p>
 <p>This method never throws. </p>
 
-<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00106">106</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;              {</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">curr_</a> != <span class="keyword">nullptr</span>) {</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <a class="code" href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">curr_</a> = <a class="code" href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">curr_</a>-&gt;next;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }                              </div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  }</div><div class="ttc" id="classbda_1_1_iterator_html_a3d5ef2aeb6acce82c1742374f895ff3a"><div class="ttname"><a href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">bda::Iterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdoc">non-owning pointer to current Node </div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00130">slist.hpp:130</a></div></div>
+<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00112">112</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;              {</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">curr_</a> != <span class="keyword">nullptr</span>) {</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <a class="code" href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">curr_</a> = <a class="code" href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">curr_</a>-&gt;next;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }                              </div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  }</div><div class="ttc" id="classbda_1_1_iterator_html_a3d5ef2aeb6acce82c1742374f895ff3a"><div class="ttname"><a href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">bda::Iterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdoc">non-owning pointer to current Node </div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00136">slist.hpp:136</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -270,7 +268,7 @@ template&lt;typename T &gt; </div>
 
 <p>non-owning pointer to current <a class="el" href="structbda_1_1_node.html" title="A node part of a singly linked list. Payload is generic. ">Node</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00130">130</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00136">136</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
 
 </div>
 </div>
@@ -280,7 +278,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 18 2020 00:27:52 for Basic data structures and algorihms in C++ by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 21 2020 01:39:39 for Basic data structures and algorihms in C++ by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

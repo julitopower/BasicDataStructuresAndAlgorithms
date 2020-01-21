@@ -7,12 +7,14 @@
 ////////////////////////////////////////////////////////////////////////////////
 namespace bda { // bda stands for Basic Data Structures
 /*!
- * \brief A node part of a singly linked list. Payload is generic
+ * \brief A node part of a singly linked list. Payload is generic.
+ *
+ * \tparam T the type of the payload in the Node
  */
 template <typename T>
 struct Node {
  public:
-  /*! Payload type */
+  /*! \brief Payload type */
   using value_type = T;
   /*!
    * \brief Create a  node with the given value
@@ -20,7 +22,10 @@ struct Node {
    * \param val The payload of this node
    */
   Node(T val) : val{val} {}
-  
+
+  /*!
+   * \brief Destructor. Causes the destruction of other Nodes linked to it
+   */
   ~Node() {
     if (next != nullptr) {
       delete next;

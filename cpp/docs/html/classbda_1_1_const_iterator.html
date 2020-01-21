@@ -78,8 +78,6 @@ $(function() {
 Collaboration diagram for bda::ConstIterator&lt; T &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbda_1_1_const_iterator__coll__graph.png" border="0" usemap="#bda_1_1_const_iterator_3_01_t_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="bda_1_1_const_iterator_3_01_t_01_4_coll__map" id="bda_1_1_const_iterator_3_01_t_01_4_coll__map">
-</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -109,7 +107,7 @@ class bda::ConstIterator&lt; T &gt;</h3>
 <p><a class="el" href="classbda_1_1_iterator.html" title="Iterator to traverse a singly linked list. ">Iterator</a> to traverse a singly linked list. </p>
 <p>Does not allow modifying the list </p>
 
-<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00043">43</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00049">49</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad3ee5c4ad2124bbd8e5f22136a9c69b2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad3ee5c4ad2124bbd8e5f22136a9c69b2">&#9670;&nbsp;</a></span>ConstIterator()</h2>
@@ -140,8 +138,8 @@ template&lt;typename T &gt; </div>
 <p>Create <a class="el" href="classbda_1_1_iterator.html" title="Iterator to traverse a singly linked list. ">Iterator</a> that points to root <a class="el" href="structbda_1_1_node.html" title="A node part of a singly linked list. Payload is generic. ">Node</a>. </p>
 <p>This is a const interator </p>
 
-<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00051">51</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;: <a class="code" href="classbda_1_1_const_iterator.html#a20301ca5dc5a7720e7e05e95bb8c57ad">curr_</a>{root} {}</div><div class="ttc" id="classbda_1_1_const_iterator_html_a20301ca5dc5a7720e7e05e95bb8c57ad"><div class="ttname"><a href="classbda_1_1_const_iterator.html#a20301ca5dc5a7720e7e05e95bb8c57ad">bda::ConstIterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00082">slist.hpp:82</a></div></div>
+<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00057">57</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;: <a class="code" href="classbda_1_1_const_iterator.html#a20301ca5dc5a7720e7e05e95bb8c57ad">curr_</a>{root} {}</div><div class="ttc" id="classbda_1_1_const_iterator_html_a20301ca5dc5a7720e7e05e95bb8c57ad"><div class="ttname"><a href="classbda_1_1_const_iterator.html#a20301ca5dc5a7720e7e05e95bb8c57ad">bda::ConstIterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00088">slist.hpp:88</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -174,8 +172,8 @@ template&lt;typename T &gt; </div>
 <p>Get the current value of the iterator. </p>
 <p>If the iterator does not point to a valid <a class="el" href="structbda_1_1_node.html" title="A node part of a singly linked list. Payload is generic. ">Node</a> it throws </p>
 
-<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00069">69</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                       {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classbda_1_1_const_iterator.html#a20301ca5dc5a7720e7e05e95bb8c57ad">curr_</a> == <span class="keyword">nullptr</span>) {</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">throw</span> std::logic_error{<span class="stringliteral">&quot;Invalid iterator. You may be trying to get values past the last one.&quot;</span>};</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classbda_1_1_const_iterator.html#a20301ca5dc5a7720e7e05e95bb8c57ad">curr_</a>-&gt;val;    </div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div><div class="ttc" id="classbda_1_1_const_iterator_html_a20301ca5dc5a7720e7e05e95bb8c57ad"><div class="ttname"><a href="classbda_1_1_const_iterator.html#a20301ca5dc5a7720e7e05e95bb8c57ad">bda::ConstIterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00082">slist.hpp:82</a></div></div>
+<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00075">75</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                       {</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classbda_1_1_const_iterator.html#a20301ca5dc5a7720e7e05e95bb8c57ad">curr_</a> == <span class="keyword">nullptr</span>) {</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">throw</span> std::logic_error{<span class="stringliteral">&quot;Invalid iterator. You may be trying to get values past the last one.&quot;</span>};</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classbda_1_1_const_iterator.html#a20301ca5dc5a7720e7e05e95bb8c57ad">curr_</a>-&gt;val;    </div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div><div class="ttc" id="classbda_1_1_const_iterator_html_a20301ca5dc5a7720e7e05e95bb8c57ad"><div class="ttname"><a href="classbda_1_1_const_iterator.html#a20301ca5dc5a7720e7e05e95bb8c57ad">bda::ConstIterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00088">slist.hpp:88</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -206,8 +204,8 @@ template&lt;typename T &gt; </div>
 
 <p>Does the iterator point to a valid <a class="el" href="structbda_1_1_node.html" title="A node part of a singly linked list. Payload is generic. ">Node</a>? </p>
 
-<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00078">78</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                         {</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classbda_1_1_const_iterator.html#a20301ca5dc5a7720e7e05e95bb8c57ad">curr_</a> != <span class="keyword">nullptr</span>;    </div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div><div class="ttc" id="classbda_1_1_const_iterator_html_a20301ca5dc5a7720e7e05e95bb8c57ad"><div class="ttname"><a href="classbda_1_1_const_iterator.html#a20301ca5dc5a7720e7e05e95bb8c57ad">bda::ConstIterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00082">slist.hpp:82</a></div></div>
+<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00084">84</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                         {</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classbda_1_1_const_iterator.html#a20301ca5dc5a7720e7e05e95bb8c57ad">curr_</a> != <span class="keyword">nullptr</span>;    </div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div><div class="ttc" id="classbda_1_1_const_iterator_html_a20301ca5dc5a7720e7e05e95bb8c57ad"><div class="ttname"><a href="classbda_1_1_const_iterator.html#a20301ca5dc5a7720e7e05e95bb8c57ad">bda::ConstIterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00088">slist.hpp:88</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -239,8 +237,8 @@ template&lt;typename T &gt; </div>
 <p>Advance the iterator one position. </p>
 <p>This method never throws. </p>
 
-<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00058">58</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;              {</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classbda_1_1_const_iterator.html#a20301ca5dc5a7720e7e05e95bb8c57ad">curr_</a> != <span class="keyword">nullptr</span>) {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <a class="code" href="classbda_1_1_const_iterator.html#a20301ca5dc5a7720e7e05e95bb8c57ad">curr_</a> = <a class="code" href="classbda_1_1_const_iterator.html#a20301ca5dc5a7720e7e05e95bb8c57ad">curr_</a>-&gt;next;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }    </div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div><div class="ttc" id="classbda_1_1_const_iterator_html_a20301ca5dc5a7720e7e05e95bb8c57ad"><div class="ttname"><a href="classbda_1_1_const_iterator.html#a20301ca5dc5a7720e7e05e95bb8c57ad">bda::ConstIterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00082">slist.hpp:82</a></div></div>
+<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00064">64</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;              {</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classbda_1_1_const_iterator.html#a20301ca5dc5a7720e7e05e95bb8c57ad">curr_</a> != <span class="keyword">nullptr</span>) {</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <a class="code" href="classbda_1_1_const_iterator.html#a20301ca5dc5a7720e7e05e95bb8c57ad">curr_</a> = <a class="code" href="classbda_1_1_const_iterator.html#a20301ca5dc5a7720e7e05e95bb8c57ad">curr_</a>-&gt;next;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }    </div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div><div class="ttc" id="classbda_1_1_const_iterator_html_a20301ca5dc5a7720e7e05e95bb8c57ad"><div class="ttname"><a href="classbda_1_1_const_iterator.html#a20301ca5dc5a7720e7e05e95bb8c57ad">bda::ConstIterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00088">slist.hpp:88</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -267,7 +265,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00082">82</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00088">88</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
 
 </div>
 </div>
@@ -277,7 +275,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 18 2020 00:27:52 for Basic data structures and algorihms in C++ by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 21 2020 01:39:38 for Basic data structures and algorihms in C++ by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
