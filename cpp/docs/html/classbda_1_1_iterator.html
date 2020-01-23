@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Basic data structures and algorihms in C++: bda::Iterator&lt; T &gt; Class Template Reference</title>
+<title>Basic data structures and algorihms in C++: bda::Iterator&lt; T, CONST &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,7 +66,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">bda::Iterator&lt; T &gt; Class Template Reference</div>  </div>
+<div class="title">bda::Iterator&lt; T, CONST &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -75,54 +75,61 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for bda::Iterator&lt; T &gt;:</div>
+Collaboration diagram for bda::Iterator&lt; T, CONST &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="classbda_1_1_iterator__coll__graph.png" border="0" usemap="#bda_1_1_iterator_3_01_t_01_4_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="classbda_1_1_iterator__coll__graph.png" border="0" usemap="#bda_1_1_iterator_3_01_t_00_01_c_o_n_s_t_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="bda_1_1_iterator_3_01_t_00_01_c_o_n_s_t_01_4_coll__map" id="bda_1_1_iterator_3_01_t_00_01_c_o_n_s_t_01_4_coll__map">
+</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad28d4e5fa9a4e13545b830199bc0eb69"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbda_1_1_iterator.html#ad28d4e5fa9a4e13545b830199bc0eb69">Iterator</a> (<a class="el" href="structbda_1_1_node.html">Node</a>&lt; T &gt; *root)</td></tr>
-<tr class="memdesc:ad28d4e5fa9a4e13545b830199bc0eb69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create <a class="el" href="classbda_1_1_iterator.html" title="Iterator to traverse a singly linked list. ">Iterator</a> that points to root <a class="el" href="structbda_1_1_int_node.html" title="A node part of a singly linked list. Payload is int64_t. ">IntNode</a>.  <a href="#ad28d4e5fa9a4e13545b830199bc0eb69">More...</a><br /></td></tr>
-<tr class="separator:ad28d4e5fa9a4e13545b830199bc0eb69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a162365325ef1f66702c91d9d07a6c2a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbda_1_1_iterator.html#a162365325ef1f66702c91d9d07a6c2a5">next</a> ()</td></tr>
-<tr class="memdesc:a162365325ef1f66702c91d9d07a6c2a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advance the iterator one position.  <a href="#a162365325ef1f66702c91d9d07a6c2a5">More...</a><br /></td></tr>
-<tr class="separator:a162365325ef1f66702c91d9d07a6c2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a5ec4b6720453e54b99a8b5bf410250"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbda_1_1_iterator.html#a7a5ec4b6720453e54b99a8b5bf410250">get</a> ()</td></tr>
-<tr class="memdesc:a7a5ec4b6720453e54b99a8b5bf410250"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current value of the iterator.  <a href="#a7a5ec4b6720453e54b99a8b5bf410250">More...</a><br /></td></tr>
-<tr class="separator:a7a5ec4b6720453e54b99a8b5bf410250"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52adfda19971883bbcd33b5ca3b563f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbda_1_1_iterator.html#a52adfda19971883bbcd33b5ca3b563f2">has_value</a> () const</td></tr>
-<tr class="memdesc:a52adfda19971883bbcd33b5ca3b563f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does the iterator point to a valid <a class="el" href="structbda_1_1_int_node.html" title="A node part of a singly linked list. Payload is int64_t. ">IntNode</a>?  <a href="#a52adfda19971883bbcd33b5ca3b563f2">More...</a><br /></td></tr>
-<tr class="separator:a52adfda19971883bbcd33b5ca3b563f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e277a9403b223834ca3ba4029515e69"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbda_1_1_iterator.html#a1e277a9403b223834ca3ba4029515e69">Iterator</a> (<a class="el" href="structbda_1_1_node.html">Node</a>&lt; T &gt; *root)</td></tr>
+<tr class="memdesc:a1e277a9403b223834ca3ba4029515e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create <a class="el" href="classbda_1_1_iterator.html" title="Iterator to traverse a singly linked list. ">Iterator</a> that points to root <a class="el" href="structbda_1_1_int_node.html" title="A node part of a singly linked list. Payload is int64_t. ">IntNode</a>.  <a href="#a1e277a9403b223834ca3ba4029515e69">More...</a><br /></td></tr>
+<tr class="separator:a1e277a9403b223834ca3ba4029515e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa174a198ddf158767867eb5f6ef13de1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbda_1_1_iterator.html#aa174a198ddf158767867eb5f6ef13de1">next</a> ()</td></tr>
+<tr class="memdesc:aa174a198ddf158767867eb5f6ef13de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advance the iterator one position.  <a href="#aa174a198ddf158767867eb5f6ef13de1">More...</a><br /></td></tr>
+<tr class="separator:aa174a198ddf158767867eb5f6ef13de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a887605a8ffc37f5fa6bed644f79701"><td class="memTemplParams" colspan="2">template&lt;typename R  = T&amp;&gt; </td></tr>
+<tr class="memitem:a8a887605a8ffc37f5fa6bed644f79701"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;!CONST, R &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbda_1_1_iterator.html#a8a887605a8ffc37f5fa6bed644f79701">get</a> ()</td></tr>
+<tr class="memdesc:a8a887605a8ffc37f5fa6bed644f79701"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current value of the iterator.  <a href="#a8a887605a8ffc37f5fa6bed644f79701">More...</a><br /></td></tr>
+<tr class="separator:a8a887605a8ffc37f5fa6bed644f79701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa4fadfeb6bf986005794230d5d0e1f9"><td class="memTemplParams" colspan="2">template&lt;typename R  = const T&amp;&gt; </td></tr>
+<tr class="memitem:afa4fadfeb6bf986005794230d5d0e1f9"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; CONST, R &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbda_1_1_iterator.html#afa4fadfeb6bf986005794230d5d0e1f9">get</a> ()</td></tr>
+<tr class="memdesc:afa4fadfeb6bf986005794230d5d0e1f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current const value of the iterator.  <a href="#afa4fadfeb6bf986005794230d5d0e1f9">More...</a><br /></td></tr>
+<tr class="separator:afa4fadfeb6bf986005794230d5d0e1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab824eff4fd2da6c987989681ed470507"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbda_1_1_iterator.html#ab824eff4fd2da6c987989681ed470507">has_value</a> () const</td></tr>
+<tr class="memdesc:ab824eff4fd2da6c987989681ed470507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does the iterator point to a valid <a class="el" href="structbda_1_1_int_node.html" title="A node part of a singly linked list. Payload is int64_t. ">IntNode</a>?  <a href="#ab824eff4fd2da6c987989681ed470507">More...</a><br /></td></tr>
+<tr class="separator:ab824eff4fd2da6c987989681ed470507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a3d5ef2aeb6acce82c1742374f895ff3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbda_1_1_node.html">Node</a>&lt; T &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">curr_</a> = nullptr</td></tr>
-<tr class="memdesc:a3d5ef2aeb6acce82c1742374f895ff3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">non-owning pointer to current <a class="el" href="structbda_1_1_node.html" title="A node part of a singly linked list. Payload is generic. ">Node</a>  <a href="#a3d5ef2aeb6acce82c1742374f895ff3a">More...</a><br /></td></tr>
-<tr class="separator:a3d5ef2aeb6acce82c1742374f895ff3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73c7fd3d053fea59f715ed4bfb969452"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbda_1_1_node.html">Node</a>&lt; T &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbda_1_1_iterator.html#a73c7fd3d053fea59f715ed4bfb969452">curr_</a> = nullptr</td></tr>
+<tr class="memdesc:a73c7fd3d053fea59f715ed4bfb969452"><td class="mdescLeft">&#160;</td><td class="mdescRight">non-owning pointer to current <a class="el" href="structbda_1_1_node.html" title="A node part of a singly linked list. Payload is generic. ">Node</a>  <a href="#a73c7fd3d053fea59f715ed4bfb969452">More...</a><br /></td></tr>
+<tr class="separator:a73c7fd3d053fea59f715ed4bfb969452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T&gt;<br />
-class bda::Iterator&lt; T &gt;</h3>
+<div class="textblock"><h3>template&lt;typename T, bool CONST&gt;<br />
+class bda::Iterator&lt; T, CONST &gt;</h3>
 
 <p><a class="el" href="classbda_1_1_iterator.html" title="Iterator to traverse a singly linked list. ">Iterator</a> to traverse a singly linked list. </p>
 <p>Does not allow modifying the list </p>
 
-<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00097">97</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00050">50</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad28d4e5fa9a4e13545b830199bc0eb69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad28d4e5fa9a4e13545b830199bc0eb69">&#9670;&nbsp;</a></span>Iterator()</h2>
+<a id="a1e277a9403b223834ca3ba4029515e69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e277a9403b223834ca3ba4029515e69">&#9670;&nbsp;</a></span>Iterator()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , bool CONST&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbda_1_1_iterator.html">bda::Iterator</a>&lt; T &gt;::<a class="el" href="classbda_1_1_iterator.html">Iterator</a> </td>
+          <td class="memname"><a class="el" href="classbda_1_1_iterator.html">bda::Iterator</a>&lt; T, CONST &gt;::<a class="el" href="classbda_1_1_iterator.html">Iterator</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structbda_1_1_node.html">Node</a>&lt; T &gt; *&#160;</td>
           <td class="paramname"><em>root</em></td><td>)</td>
@@ -139,25 +146,27 @@ template&lt;typename T &gt; </div>
 <p>Create <a class="el" href="classbda_1_1_iterator.html" title="Iterator to traverse a singly linked list. ">Iterator</a> that points to root <a class="el" href="structbda_1_1_int_node.html" title="A node part of a singly linked list. Payload is int64_t. ">IntNode</a>. </p>
 <p>This is a const interator </p>
 
-<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00105">105</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;: <a class="code" href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">curr_</a>{root} {}</div><div class="ttc" id="classbda_1_1_iterator_html_a3d5ef2aeb6acce82c1742374f895ff3a"><div class="ttname"><a href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">bda::Iterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdoc">non-owning pointer to current Node </div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00136">slist.hpp:136</a></div></div>
+<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00058">58</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;: <a class="code" href="classbda_1_1_iterator.html#a73c7fd3d053fea59f715ed4bfb969452">curr_</a>{root} {}</div><div class="ttc" id="classbda_1_1_iterator_html_a73c7fd3d053fea59f715ed4bfb969452"><div class="ttname"><a href="classbda_1_1_iterator.html#a73c7fd3d053fea59f715ed4bfb969452">bda::Iterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdoc">non-owning pointer to current Node </div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00110">slist.hpp:110</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7a5ec4b6720453e54b99a8b5bf410250"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a5ec4b6720453e54b99a8b5bf410250">&#9670;&nbsp;</a></span>get()</h2>
+<a id="a8a887605a8ffc37f5fa6bed644f79701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a887605a8ffc37f5fa6bed644f79701">&#9670;&nbsp;</a></span>get() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , bool CONST&gt; </div>
+<div class="memtemplate">
+template&lt;typename R  = T&amp;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T&amp; <a class="el" href="classbda_1_1_iterator.html">bda::Iterator</a>&lt; T &gt;::get </td>
+          <td class="memname">std::enable_if&lt;!CONST, R&gt;::type <a class="el" href="classbda_1_1_iterator.html">bda::Iterator</a>&lt; T, CONST &gt;::get </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -171,26 +180,63 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Get the current value of the iterator. </p>
+<p>This function provides a mutable reference, if T is not const</p>
 <p>If the iterator does not point to a valid <a class="el" href="structbda_1_1_int_node.html" title="A node part of a singly linked list. Payload is int64_t. ">IntNode</a> it throws </p>
 
-<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00122">122</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;           {</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">curr_</a> == <span class="keyword">nullptr</span>) {</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      <span class="keywordflow">throw</span> std::logic_error{<span class="stringliteral">&quot;Invalid iterator. You may be trying to get values past the last one.&quot;</span>};</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">curr_</a>-&gt;val;    </div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  }</div><div class="ttc" id="classbda_1_1_iterator_html_a3d5ef2aeb6acce82c1742374f895ff3a"><div class="ttname"><a href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">bda::Iterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdoc">non-owning pointer to current Node </div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00136">slist.hpp:136</a></div></div>
+<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00079">79</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        {</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classbda_1_1_iterator.html#a73c7fd3d053fea59f715ed4bfb969452">curr_</a> == <span class="keyword">nullptr</span>) {</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">throw</span> std::logic_error{<span class="stringliteral">&quot;Invalid iterator. You may be trying to get values past the last one.&quot;</span>};</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classbda_1_1_iterator.html#a73c7fd3d053fea59f715ed4bfb969452">curr_</a>-&gt;val;    </div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div><div class="ttc" id="classbda_1_1_iterator_html_a73c7fd3d053fea59f715ed4bfb969452"><div class="ttname"><a href="classbda_1_1_iterator.html#a73c7fd3d053fea59f715ed4bfb969452">bda::Iterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdoc">non-owning pointer to current Node </div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00110">slist.hpp:110</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a52adfda19971883bbcd33b5ca3b563f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52adfda19971883bbcd33b5ca3b563f2">&#9670;&nbsp;</a></span>has_value()</h2>
+<a id="afa4fadfeb6bf986005794230d5d0e1f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa4fadfeb6bf986005794230d5d0e1f9">&#9670;&nbsp;</a></span>get() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , bool CONST&gt; </div>
+<div class="memtemplate">
+template&lt;typename R  = const T&amp;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classbda_1_1_iterator.html">bda::Iterator</a>&lt; T &gt;::has_value </td>
+          <td class="memname">std::enable_if&lt;CONST, R&gt;::type <a class="el" href="classbda_1_1_iterator.html">bda::Iterator</a>&lt; T, CONST &gt;::get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the current const value of the iterator. </p>
+<p>This function provides a const reference</p>
+<p>If the iterator does not point to a valid <a class="el" href="structbda_1_1_int_node.html" title="A node part of a singly linked list. Payload is int64_t. ">IntNode</a> it throws </p>
+
+<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00095">95</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        {</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classbda_1_1_iterator.html#a73c7fd3d053fea59f715ed4bfb969452">curr_</a> == <span class="keyword">nullptr</span>) {</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <span class="keywordflow">throw</span> std::logic_error{<span class="stringliteral">&quot;Invalid iterator. You may be trying to get values past the last one.&quot;</span>};</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classbda_1_1_iterator.html#a73c7fd3d053fea59f715ed4bfb969452">curr_</a>-&gt;val;    </div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }  </div><div class="ttc" id="classbda_1_1_iterator_html_a73c7fd3d053fea59f715ed4bfb969452"><div class="ttname"><a href="classbda_1_1_iterator.html#a73c7fd3d053fea59f715ed4bfb969452">bda::Iterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdoc">non-owning pointer to current Node </div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00110">slist.hpp:110</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab824eff4fd2da6c987989681ed470507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab824eff4fd2da6c987989681ed470507">&#9670;&nbsp;</a></span>has_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , bool CONST&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classbda_1_1_iterator.html">bda::Iterator</a>&lt; T, CONST &gt;::has_value </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -205,24 +251,24 @@ template&lt;typename T &gt; </div>
 
 <p>Does the iterator point to a valid <a class="el" href="structbda_1_1_int_node.html" title="A node part of a singly linked list. Payload is int64_t. ">IntNode</a>? </p>
 
-<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00131">131</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                         {</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">curr_</a> != <span class="keyword">nullptr</span>;    </div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  }</div><div class="ttc" id="classbda_1_1_iterator_html_a3d5ef2aeb6acce82c1742374f895ff3a"><div class="ttname"><a href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">bda::Iterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdoc">non-owning pointer to current Node </div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00136">slist.hpp:136</a></div></div>
+<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00105">105</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                         {</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classbda_1_1_iterator.html#a73c7fd3d053fea59f715ed4bfb969452">curr_</a> != <span class="keyword">nullptr</span>;    </div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  }</div><div class="ttc" id="classbda_1_1_iterator_html_a73c7fd3d053fea59f715ed4bfb969452"><div class="ttname"><a href="classbda_1_1_iterator.html#a73c7fd3d053fea59f715ed4bfb969452">bda::Iterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdoc">non-owning pointer to current Node </div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00110">slist.hpp:110</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a162365325ef1f66702c91d9d07a6c2a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a162365325ef1f66702c91d9d07a6c2a5">&#9670;&nbsp;</a></span>next()</h2>
+<a id="aa174a198ddf158767867eb5f6ef13de1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa174a198ddf158767867eb5f6ef13de1">&#9670;&nbsp;</a></span>next()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , bool CONST&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbda_1_1_iterator.html">bda::Iterator</a>&lt; T &gt;::next </td>
+          <td class="memname">void <a class="el" href="classbda_1_1_iterator.html">bda::Iterator</a>&lt; T, CONST &gt;::next </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -238,25 +284,25 @@ template&lt;typename T &gt; </div>
 <p>Advance the iterator one position. </p>
 <p>This method never throws. </p>
 
-<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00112">112</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;              {</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">curr_</a> != <span class="keyword">nullptr</span>) {</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <a class="code" href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">curr_</a> = <a class="code" href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">curr_</a>-&gt;next;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }                              </div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  }</div><div class="ttc" id="classbda_1_1_iterator_html_a3d5ef2aeb6acce82c1742374f895ff3a"><div class="ttname"><a href="classbda_1_1_iterator.html#a3d5ef2aeb6acce82c1742374f895ff3a">bda::Iterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdoc">non-owning pointer to current Node </div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00136">slist.hpp:136</a></div></div>
+<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00065">65</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;              {</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classbda_1_1_iterator.html#a73c7fd3d053fea59f715ed4bfb969452">curr_</a> != <span class="keyword">nullptr</span>) {</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <a class="code" href="classbda_1_1_iterator.html#a73c7fd3d053fea59f715ed4bfb969452">curr_</a> = <a class="code" href="classbda_1_1_iterator.html#a73c7fd3d053fea59f715ed4bfb969452">curr_</a>-&gt;next;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }                              </div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div><div class="ttc" id="classbda_1_1_iterator_html_a73c7fd3d053fea59f715ed4bfb969452"><div class="ttname"><a href="classbda_1_1_iterator.html#a73c7fd3d053fea59f715ed4bfb969452">bda::Iterator::curr_</a></div><div class="ttdeci">Node&lt; T &gt; * curr_</div><div class="ttdoc">non-owning pointer to current Node </div><div class="ttdef"><b>Definition:</b> <a href="generic__singly__linked__list_2slist_8hpp_source.html#l00110">slist.hpp:110</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a3d5ef2aeb6acce82c1742374f895ff3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d5ef2aeb6acce82c1742374f895ff3a">&#9670;&nbsp;</a></span>curr_</h2>
+<a id="a73c7fd3d053fea59f715ed4bfb969452"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73c7fd3d053fea59f715ed4bfb969452">&#9670;&nbsp;</a></span>curr_</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , bool CONST&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structbda_1_1_node.html">Node</a>&lt;T&gt;* <a class="el" href="classbda_1_1_iterator.html">bda::Iterator</a>&lt; T &gt;::curr_ = nullptr</td>
+          <td class="memname"><a class="el" href="structbda_1_1_node.html">Node</a>&lt;T&gt;* <a class="el" href="classbda_1_1_iterator.html">bda::Iterator</a>&lt; T, CONST &gt;::curr_ = nullptr</td>
         </tr>
       </table>
   </td>
@@ -268,7 +314,7 @@ template&lt;typename T &gt; </div>
 
 <p>non-owning pointer to current <a class="el" href="structbda_1_1_node.html" title="A node part of a singly linked list. Payload is generic. ">Node</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00136">136</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html#l00110">110</a> of file <a class="el" href="generic__singly__linked__list_2slist_8hpp_source.html">slist.hpp</a>.</p>
 
 </div>
 </div>
@@ -278,7 +324,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 21 2020 01:39:39 for Basic data structures and algorihms in C++ by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 23 2020 01:09:13 for Basic data structures and algorihms in C++ by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
