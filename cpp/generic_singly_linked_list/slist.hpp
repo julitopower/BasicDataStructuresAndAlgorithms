@@ -75,7 +75,7 @@ class Iterator {
    * If the iterator does not point to a valid IntNode it throws
    */
   template<typename R = T&>
-  typename std::enable_if<!CONST, R>::type
+  typename std::enable_if_t<!CONST, R>
   get() {
     if (curr_ == nullptr) {
       throw std::logic_error{"Invalid iterator. You may be trying to get values past the last one."};
@@ -91,7 +91,7 @@ class Iterator {
    * If the iterator does not point to a valid IntNode it throws
    */  
   template<typename R = const T&>
-  typename std::enable_if<CONST, R>::type  
+  typename std::enable_if_t<CONST, R>  
   get() {
     if (curr_ == nullptr) {
       throw std::logic_error{"Invalid iterator. You may be trying to get values past the last one."};
