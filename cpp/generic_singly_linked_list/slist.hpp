@@ -1,4 +1,5 @@
 #include <iostream>
+#include <type_traits>
 #include <stdint.h>
 #include <tuple>
 
@@ -39,61 +40,13 @@ struct Node {
   Node* next = nullptr;
 };
 
-/*!
- * \brief Iterator to traverse a singly linked list
- *
- * Does not allow modifying the list
- */
-//TODO: We only need one iterator and a bit of SFINAE magic
-template<typename T>
-class ConstIterator {
- public:
-  /*!
-   * \brief Create Iterator that points to root Node
-   *
-   * This is a const interator
-   */
-  //TODO: can this be const Node&
-  ConstIterator(Node<T>* root) : curr_{root} {}
-  
-  /*!
-   * \brief Advance the iterator one position
-   *
-   * This method never throws.
-   */
-  void next() {
-    if (curr_ != nullptr) {
-      curr_ = curr_->next;
-    }    
-  }
-  
-  /*!
-   * \brief Get the current value of the iterator
-   *
-   * If the iterator does not point to a valid Node it throws
-   */
-  const T& get() const {
-    if (curr_ == nullptr) {
-      throw std::logic_error{"Invalid iterator. You may be trying to get values past the last one."};
-    }
-    return curr_->val;    
-  }
-  /*!
-   * \brief Does the iterator point to a valid Node?
-   */
-  bool has_value() const {
-    return curr_ != nullptr;    
-  }
- private:
-  Node<T>* curr_ = nullptr;
-};
 
 /*!
  * \brief Iterator to traverse a singly linked list
  *
  * Does not allow modifying the list
  */
-template <typename T>
+template <typename T, bool CONST>
 class Iterator {
  public:
   /*!
@@ -117,14 +70,35 @@ class Iterator {
   /*!
    * \brief Get the current value of the iterator
    *
+   * This function provides a mutable reference, if T is not const
+   *
    * If the iterator does not point to a valid IntNode it throws
    */
-  T& get() {
+  template<typename R = T&>
+  typename std::enable_if<!CONST, R>::type
+  get() {
     if (curr_ == nullptr) {
       throw std::logic_error{"Invalid iterator. You may be trying to get values past the last one."};
     }
     return curr_->val;    
   }
+
+  /*!
+   * \brief Get the current const value of the iterator
+   *
+   * This function provides a const reference
+   *
+   * If the iterator does not point to a valid IntNode it throws
+   */  
+  template<typename R = const T&>
+  typename std::enable_if<CONST, R>::type  
+  get() {
+    if (curr_ == nullptr) {
+      throw std::logic_error{"Invalid iterator. You may be trying to get values past the last one."};
+    }
+    return curr_->val;    
+  }  
+  
   /*!
    * \brief Does the iterator point to a valid IntNode?
    */
@@ -146,10 +120,10 @@ class List {
       delete root_;
     }
   }
-  ConstIterator<T> citer() const {
+  Iterator<T, true> citer() const {
     return {this->root()};    
   }
-  Iterator<T> iter() const {
+  Iterator<T, false> iter() const {
     return {this->root()};    
   }
   
