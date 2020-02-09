@@ -78,8 +78,6 @@ $(function() {
 Collaboration diagram for bda::Iterator&lt; T, CONST &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbda_1_1_iterator__coll__graph.png" border="0" usemap="#bda_1_1_iterator_3_01_t_00_01_c_o_n_s_t_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="bda_1_1_iterator_3_01_t_00_01_c_o_n_s_t_01_4_coll__map" id="bda_1_1_iterator_3_01_t_00_01_c_o_n_s_t_01_4_coll__map">
-</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -90,14 +88,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa174a198ddf158767867eb5f6ef13de1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbda_1_1_iterator.html#aa174a198ddf158767867eb5f6ef13de1">next</a> ()</td></tr>
 <tr class="memdesc:aa174a198ddf158767867eb5f6ef13de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advance the iterator one position.  <a href="#aa174a198ddf158767867eb5f6ef13de1">More...</a><br /></td></tr>
 <tr class="separator:aa174a198ddf158767867eb5f6ef13de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a887605a8ffc37f5fa6bed644f79701"><td class="memTemplParams" colspan="2">template&lt;typename R  = T&amp;&gt; </td></tr>
-<tr class="memitem:a8a887605a8ffc37f5fa6bed644f79701"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;!CONST, R &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbda_1_1_iterator.html#a8a887605a8ffc37f5fa6bed644f79701">get</a> ()</td></tr>
-<tr class="memdesc:a8a887605a8ffc37f5fa6bed644f79701"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current value of the iterator.  <a href="#a8a887605a8ffc37f5fa6bed644f79701">More...</a><br /></td></tr>
-<tr class="separator:a8a887605a8ffc37f5fa6bed644f79701"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa4fadfeb6bf986005794230d5d0e1f9"><td class="memTemplParams" colspan="2">template&lt;typename R  = const T&amp;&gt; </td></tr>
-<tr class="memitem:afa4fadfeb6bf986005794230d5d0e1f9"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; CONST, R &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbda_1_1_iterator.html#afa4fadfeb6bf986005794230d5d0e1f9">get</a> ()</td></tr>
-<tr class="memdesc:afa4fadfeb6bf986005794230d5d0e1f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current const value of the iterator.  <a href="#afa4fadfeb6bf986005794230d5d0e1f9">More...</a><br /></td></tr>
-<tr class="separator:afa4fadfeb6bf986005794230d5d0e1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb1ad38ca726249340beb55a02adedbf"><td class="memTemplParams" colspan="2">template&lt;typename R  = T&amp;&gt; </td></tr>
+<tr class="memitem:acb1ad38ca726249340beb55a02adedbf"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt;!CONST, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbda_1_1_iterator.html#acb1ad38ca726249340beb55a02adedbf">get</a> ()</td></tr>
+<tr class="memdesc:acb1ad38ca726249340beb55a02adedbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current value of the iterator.  <a href="#acb1ad38ca726249340beb55a02adedbf">More...</a><br /></td></tr>
+<tr class="separator:acb1ad38ca726249340beb55a02adedbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a490cff0c278129e22d1569e809f295af"><td class="memTemplParams" colspan="2">template&lt;typename R  = const T&amp;&gt; </td></tr>
+<tr class="memitem:a490cff0c278129e22d1569e809f295af"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; CONST, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbda_1_1_iterator.html#a490cff0c278129e22d1569e809f295af">get</a> ()</td></tr>
+<tr class="memdesc:a490cff0c278129e22d1569e809f295af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current const value of the iterator.  <a href="#a490cff0c278129e22d1569e809f295af">More...</a><br /></td></tr>
+<tr class="separator:a490cff0c278129e22d1569e809f295af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab824eff4fd2da6c987989681ed470507"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbda_1_1_iterator.html#ab824eff4fd2da6c987989681ed470507">has_value</a> () const</td></tr>
 <tr class="memdesc:ab824eff4fd2da6c987989681ed470507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does the iterator point to a valid <a class="el" href="structbda_1_1_int_node.html" title="A node part of a singly linked list. Payload is int64_t. ">IntNode</a>?  <a href="#ab824eff4fd2da6c987989681ed470507">More...</a><br /></td></tr>
 <tr class="separator:ab824eff4fd2da6c987989681ed470507"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,8 +150,8 @@ template&lt;typename T , bool CONST&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8a887605a8ffc37f5fa6bed644f79701"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a887605a8ffc37f5fa6bed644f79701">&#9670;&nbsp;</a></span>get() <span class="overload">[1/2]</span></h2>
+<a id="acb1ad38ca726249340beb55a02adedbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb1ad38ca726249340beb55a02adedbf">&#9670;&nbsp;</a></span>get() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,7 +164,7 @@ template&lt;typename R  = T&amp;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if&lt;!CONST, R&gt;::type <a class="el" href="classbda_1_1_iterator.html">bda::Iterator</a>&lt; T, CONST &gt;::get </td>
+          <td class="memname">std::enable_if_t&lt;!CONST, R&gt; <a class="el" href="classbda_1_1_iterator.html">bda::Iterator</a>&lt; T, CONST &gt;::get </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -188,8 +186,8 @@ template&lt;typename R  = T&amp;&gt; </div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="afa4fadfeb6bf986005794230d5d0e1f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa4fadfeb6bf986005794230d5d0e1f9">&#9670;&nbsp;</a></span>get() <span class="overload">[2/2]</span></h2>
+<a id="a490cff0c278129e22d1569e809f295af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a490cff0c278129e22d1569e809f295af">&#9670;&nbsp;</a></span>get() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -202,7 +200,7 @@ template&lt;typename R  = const T&amp;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if&lt;CONST, R&gt;::type <a class="el" href="classbda_1_1_iterator.html">bda::Iterator</a>&lt; T, CONST &gt;::get </td>
+          <td class="memname">std::enable_if_t&lt;CONST, R&gt; <a class="el" href="classbda_1_1_iterator.html">bda::Iterator</a>&lt; T, CONST &gt;::get </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -324,7 +322,7 @@ template&lt;typename T , bool CONST&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 23 2020 01:09:13 for Basic data structures and algorihms in C++ by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 9 2020 00:32:20 for Basic data structures and algorihms in C++ by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
