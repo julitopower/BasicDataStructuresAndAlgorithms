@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['has_5fvalue',['has_value',['../classbda_1_1_iterator.html#ab824eff4fd2da6c987989681ed470507',1,'bda::Iterator::has_value()'],['../classbda_1_1_const_int_iterator.html#ae2ebf1bc8ced04d61fef85574fca98b0',1,'bda::ConstIntIterator::has_value()'],['../classbda_1_1_int_iterator.html#a3baf84b5a1035a08f0eb51a016b04c08',1,'bda::IntIterator::has_value()']]]
+  ['get',['get',['../classbda_1_1_iterator.html#acb1ad38ca726249340beb55a02adedbf',1,'bda::Iterator::get()'],['../classbda_1_1_iterator.html#a490cff0c278129e22d1569e809f295af',1,'bda::Iterator::get()'],['../classbda_1_1_const_int_iterator.html#a2c65d1f6db22fc514fc1832290c6c01f',1,'bda::ConstIntIterator::get()'],['../classbda_1_1_int_iterator.html#ae4a6988b293617ab6e723e3cb34291f7',1,'bda::IntIterator::get()']]]
 ];

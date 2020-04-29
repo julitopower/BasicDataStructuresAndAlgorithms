@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['size_5f',['size_',['../classbda_1_1_list.html#a86dc88f45fae210703e800421063cc87',1,'bda::List::size_()'],['../classbda_1_1_int_s_list.html#ab039d99fcf8a24c0b26b0bb74cf75cb0',1,'bda::IntSList::size_()']]],
-  ['slist_2ecpp',['slist.cpp',['../slist_8cpp.html',1,'']]],
-  ['slist_2ehpp',['slist.hpp',['../generic__singly__linked__list_2slist_8hpp.html',1,'(Global Namespace)'],['../integer__singly__linked__list_2slist_8hpp.html',1,'(Global Namespace)']]],
-  ['stringify',['STRINGIFY',['../_c_make_c_compiler_id_8c.html#a43e1cad902b6477bec893cb6430bd6c8',1,'STRINGIFY():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a43e1cad902b6477bec893cb6430bd6c8',1,'STRINGIFY():&#160;CMakeCXXCompilerId.cpp']]],
-  ['stringify_5fhelper',['STRINGIFY_HELPER',['../_c_make_c_compiler_id_8c.html#a2ae9b72bb13abaabfcf2ee0ba7d3fa1d',1,'STRINGIFY_HELPER():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a2ae9b72bb13abaabfcf2ee0ba7d3fa1d',1,'STRINGIFY_HELPER():&#160;CMakeCXXCompilerId.cpp']]]
+  ['range_5f',['range_',['../classcesar_1_1_cesar_cypher.html#a0c4c2df99fed1324c3fa8dc0575c479e',1,'cesar::CesarCypher::range_()'],['../classcesar_1_1_cesar_cypher_impl.html#ad4e76f1b1e9ae39ee27e493ff2002ab1',1,'cesar::CesarCypherImpl::range_()']]],
+  ['root',['root',['../classbda_1_1_list.html#a9a83dd2785e969a690d7341cce16693d',1,'bda::List::root()'],['../classbda_1_1_int_s_list.html#af8d51413973fe9481946edc9d7dc5a0e',1,'bda::IntSList::root()']]],
+  ['root_5f',['root_',['../classbda_1_1_list.html#a20d7531677c5e990f783a365bbf499a3',1,'bda::List::root_()'],['../classbda_1_1_int_s_list.html#a60d69690207a018945563db6c6dc4b6f',1,'bda::IntSList::root_()']]]
 ];
